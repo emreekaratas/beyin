@@ -1,0 +1,12 @@
+# Building Personal Knowledge Bases with LLM OS
+Source: Andrej Karpathy
+
+Something I am finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge stored as markdown and images.
+
+Data ingest: I index source documents into a raw/ directory, then I use an LLM to incrementally compile a wiki, which is just a collection of .md files in a directory structure. The wiki includes summaries of all the data in raw/, backlinks, and then it categorizes data into concepts, writes articles for them, and links them all.
+
+IDE: I use Obsidian as the IDE frontend where I can view the raw data, the compiled wiki, and the derived visualizations. Important to note that the LLM writes and maintains all of the data of the wiki, I rarely touch it directly.
+
+Q
+
+Linting: I run some LLM health checks over the wiki to find inconsistent data, impute missing data, find interesting connections for new article candidates, to incrementally clean up the wiki and enhance its overall data integrity.

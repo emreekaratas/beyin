@@ -1,0 +1,1 @@
+Claude Code ve Obsidian mimarisinde hafiza oturumlar arasi yasayan baglamsal bir mekanizmadir. Karpathy modelinde ham veri raw altinda tutulur, LLM tarafindan derlenerek knowledge altina cift yonlu linklerle cikarilir. 
